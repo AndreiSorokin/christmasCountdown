@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script&family=Passions+Conflict&display=swap')
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+
+body{
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   overflow: hidden;
+   background-image: url('pexels-george-dolgikh-1303086.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.santa{
+   position: absolute;
+   top: -5vh;
+   left: 22.5vw;
+   font-family: Dancing Script;
+   letter-spacing: 0.5rem;
+   font-size: 6vw;
+   font-weight: normal;
+   background-image: linear-gradient(to right, rgb(203, 164, 106), rgb(241, 72, 0));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.santa:hover{
+   transition-duration: 0.5s;
+   background-image: linear-gradient(to right, rgb(241, 72, 0), rgb(203, 164, 106));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   letter-spacing: 0.6rem;
+}
+
+#inscription{
+   font-family: Dancing Script;
+   font-size: 4vw;
+   font-weight: normal;
+   background-image: linear-gradient(to right, rgb(203, 164, 106), rgb(164, 161, 160));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.merry-xmas{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 12vw;
+   height: 7vh;
+   position: relative;
+   font-family: 'Abel', sans-serif;
+   border-radius: 40px;
+   letter-spacing: 0.2rem;
+   font-size: 1.5vw;
+   overflow: hidden;
+   background: none;
+   border-color: rgb(200, 178, 146);
+   background-image: linear-gradient(to right, rgb(237, 223, 223), rgb(200, 178, 146));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.merry-xmas:hover {
+   transition-duration: 0.5s;
+   letter-spacing: 0.25rem;
+   box-shadow: 0 0 1.25rem 0.5rem rgb(200, 178, 146);
+}
+
+.ripples{
+   position: absolute;
+   background: rgb(200, 178, 146);
+   transform: translate(-50%, -50%);
+   pointer-events: none;
+   border-radius: 50%;
+   animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+   0% {
+      width: 0em;
+      height: 0em;
+      opacity: 0.85;
+   }
+   100% {
+      width: 100em;
+      height: 100em;
+      opacity: 0;
+   }
+}
+
+#time{
+   width: 25vw;
+   min-width: 200px;
+   margin-top: 15vh;
+   display: flex;
+   justify-content: space-between;
+   transform: scale(2);
+   background-image: linear-gradient(to right, rgb(203, 164, 106), rgb(164, 161, 160));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.time-item:hover {
+   box-shadow: 0 0 1.25rem 0.5rem rgb(200, 178, 146);
+}
+
+#item{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 1rem;
+}
+
+#item:hover  {
+   transition-duration: 0.5s;
+   box-shadow: 0 0 2rem 0.1rem rgb(200, 178, 146);
+}
+
+.time{
+   font-family: 'Abel', sans-serif;
+   margin: 0.6vh;
+}
+
+@media (max-width: 700px) {
+   #inscription{
+      font-size: 6vw;
+   }
+   #time{
+      font-size: 3vw;
+   }
+
+   
+}
+
